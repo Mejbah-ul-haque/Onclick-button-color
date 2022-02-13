@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-center mt-56">
+    <button id="bg-red-button" class=" text-white py-3 m-2 rounded-3xl font-bold border-2 border-red-600 "><span class="bg-red-600 py-2 px-4 rounded-3xl m-2">click on red</span></button>
+    <button id="bg-goldenrod-button" class=" text-white py-3 m-2 rounded-3xl font-bold border-2 border-amber-600 "><span class="bg-amber-600 py-2 px-4 rounded-3xl m-2">click on Golden</span></button>
+
+    <button id="bg-purple-button" class=" text-white py-3 m-2 rounded-3xl font-bold border-2 border-purple-900 "><span class="bg-purple-900 py-2 px-4 rounded-3xl m-2">click on purple</span></button>
+
+    <button id="bg-green-button" class=" text-white py-3 m-2 rounded-3xl font-bold border-2 border-green-900 "><span class="bg-green-700 py-2 px-4 rounded-3xl m-2">click on red</span></button>
+    <button id="bg-black-button" class=" text-white py-3 m-2 rounded-3xl font-bold border-2 border-black "><span class="bg-black py-2 px-4 rounded-3xl m-2">click on red</span></button>
+    <button id="bg-darkblue-button" class=" text-white py-3 m-2 rounded-3xl font-bold border-2 border-blue-900 "><span class="bg-blue-900 py-2 px-4 rounded-3xl m-2">Darkblue</span></button>
+
+
+    <script>
+        const redButton = document.getElementById('bg-red-button').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'red';
+        })
+        document.getElementById('bg-goldenrod-button').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'goldenrod';
+        })
+        document.getElementById('bg-purple-button').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'purple';
+        })
+        document.getElementById('bg-green-button').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'green';
+        })
+        document.getElementById('bg-black-button').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'black';
+        })
+        document.getElementById('bg-darkblue-button').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'darkblue';
+        })
+    </script>
+</body>
+</html>
